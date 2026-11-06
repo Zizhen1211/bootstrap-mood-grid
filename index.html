@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Which Mood Are You Today?</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+    <title>Mood Grid</title>
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet">
 
@@ -20,9 +22,97 @@
     </style>
 </head>
 
-<body class="bg-light">
+<body class="bg-light" id="top">
 
-    <div class="container py-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+
+            <a class="navbar-brand" href="#top">
+                Mood Gallery
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#moodNavbar"
+                    aria-controls="moodNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="moodNavbar">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           aria-current="page"
+                           href="#top">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#moods">
+                            All Moods
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#happy">
+                            Happy
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            More Moods
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#thinking">
+                                    Thinking
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#confused">
+                                    Confused
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#sleepy">
+                                    Sleepy
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled"
+                           aria-disabled="true">
+                            Coming Soon
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5" id="moods">
 
         <h1 class="display-4 text-center text-primary">
             Which Mood Are You Today?
@@ -35,17 +125,20 @@
         <div class="row g-4">
 
             <!-- Thinking -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" id="thinking">
+
                 <div class="bg-white border border-primary border-3 rounded p-3 h-100 text-center">
 
                     <img src="image/思考.jpg"
                          class="mood-picture rounded mb-3"
                          alt="Character thinking">
 
-                    <h2 class="h4 text-primary">Thinking</h2>
+                    <h2 class="h4 text-primary">
+                        Thinking
+                    </h2>
 
                     <p>
-                        I am thinking carefully about my next step.
+                        I am thinking carefully about my next step
                     </p>
 
                 </div>
@@ -54,16 +147,19 @@
 
             <!-- Dizzy -->
             <div class="col-12 col-md-4">
+
                 <div class="bg-warning-subtle border border-warning border-3 rounded p-3 h-100 text-center">
 
                     <img src="image/晕.jpg"
                          class="mood-picture rounded mb-3"
                          alt="Character feeling dizzy">
 
-                    <h2 class="h4 text-warning-emphasis">Dizzy</h2>
+                    <h2 class="h4 text-warning-emphasis">
+                        Dizzy
+                    </h2>
 
                     <p>
-                        There is too much happening around me.
+                        There is too much happening around me
                     </p>
 
                 </div>
@@ -72,13 +168,16 @@
 
             <!-- Nervous -->
             <div class="col-12 col-md-4">
+
                 <div class="bg-info-subtle border border-info border-3 rounded p-3 h-100 text-center">
 
                     <img src="image/尴尬.jpg"
                          class="mood-picture rounded mb-3"
                          alt="Character feeling nervous">
 
-                    <h2 class="h4 text-info-emphasis">Nervous</h2>
+                    <h2 class="h4 text-info-emphasis">
+                        Nervous
+                    </h2>
 
                     <p>
                         I feel nervous, but I will keep trying.
@@ -89,17 +188,20 @@
 
 
             <!-- Confused -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" id="confused">
+
                 <div class="bg-secondary-subtle border border-secondary border-3 rounded p-3 h-100 text-center">
 
                     <img src="image/疑问.jpg"
                          class="mood-picture rounded mb-3"
                          alt="Character feeling confused">
 
-                    <h2 class="h4 text-secondary">Confused</h2>
+                    <h2 class="h4 text-secondary">
+                        Confused
+                    </h2>
 
                     <p>
-                        I am not sure what is happening right now.
+                        I am not sure what is happening right now
                     </p>
 
                 </div>
@@ -108,16 +210,19 @@
 
             <!-- Confident -->
             <div class="col-12 col-md-4">
+
                 <div class="bg-success-subtle border border-success border-3 rounded p-3 h-100 text-center">
 
                     <img src="image/OK.jpg"
                          class="mood-picture rounded mb-3"
                          alt="Character feeling confident">
 
-                    <h2 class="h4 text-success">Confident</h2>
+                    <h2 class="h4 text-success">
+                        Confident
+                    </h2>
 
                     <p>
-                        I am ready to face the next challenge.
+                        I am ready to face the next challenge
                     </p>
 
                 </div>
@@ -126,13 +231,16 @@
 
             <!-- Upset -->
             <div class="col-12 col-md-4">
+
                 <div class="bg-danger-subtle border border-danger border-3 rounded p-3 h-100 text-center">
 
                     <img src="image/气哭.jpg"
                          class="mood-picture rounded mb-3"
                          alt="Character feeling upset">
 
-                    <h2 class="h4 text-danger">Upset</h2>
+                    <h2 class="h4 text-danger">
+                        Upset
+                    </h2>
 
                     <p>
                         Today was difficult, and I need a break.
@@ -144,16 +252,19 @@
 
             <!-- Loved -->
             <div class="col-12 col-md-4">
+
                 <div class="bg-danger-subtle border border-danger border-3 rounded p-3 h-100 text-center">
 
                     <img src="image/喜欢.jpg"
                          class="mood-picture rounded mb-3"
                          alt="Character feeling loved">
 
-                    <h2 class="h4 text-danger">Loved</h2>
+                    <h2 class="h4 text-danger">
+                        Loved
+                    </h2>
 
                     <p>
-                        I feel warm, thankful, and cared for.
+                        I feel warm, thankful, and cared for
                     </p>
 
                 </div>
@@ -161,17 +272,20 @@
 
 
             <!-- Happy -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" id="happy">
+
                 <div class="bg-warning-subtle border border-warning border-3 rounded p-3 h-100 text-center">
 
                     <img src="image/开心.jpg"
                          class="mood-picture rounded mb-3"
                          alt="Character feeling happy">
 
-                    <h2 class="h4 text-warning-emphasis">Happy</h2>
+                    <h2 class="h4 text-warning-emphasis">
+                        Happy
+                    </h2>
 
                     <p>
-                        I feel cheerful and ready for a good day.
+                        I feel cheerful and ready for a good day
                     </p>
 
                 </div>
@@ -179,17 +293,20 @@
 
 
             <!-- Sleepy -->
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4" id="sleepy">
+
                 <div class="bg-primary-subtle border border-primary border-3 rounded p-3 h-100 text-center">
 
                     <img src="image/困.jpg"
                          class="mood-picture rounded mb-3"
                          alt="Character feeling sleepy">
 
-                    <h2 class="h4 text-primary">Sleepy</h2>
+                    <h2 class="h4 text-primary">
+                        Sleepy
+                    </h2>
 
                     <p>
-                        I need some rest after a very long day.
+                        I need some rest after a very long day
                     </p>
 
                 </div>
